@@ -1,0 +1,36 @@
+.wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+body {
+    margin-top: 0;
+    margin-left: 0;
+}
+#header {
+    background-color: #FFF4E9;
+    height: 100px;
+    width: 100%;
+    top: 0;
+    position: fixed;
+    z-index: 1;
+}
+li > a {
+    text-decoration: none;
+    font-size: 1.2em;
+}
+ul > li {
+    padding: 20px 15px;
+    display: inline-block;
+}
+#menu-header {
+    margin-right: 13%;
+    margin-top: 2.45%;
+}
+ul.menu {
+    float: right;
+}
+#logo {
+    max-width: 60px;
+    margin-left: 11%;
+    margin-top: 10px;
+}

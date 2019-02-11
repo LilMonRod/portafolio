@@ -1,0 +1,25 @@
+
+/****************
+      Helpers
+*****************/
+.clearfix::after {
+    display: block;
+    content: "";
+    clear: both;
+}
+@font-face {
+    font-family: 'Cabin';
+    /* Antes de descargar el archivo, le decimos al buscador
+    que intente buscar en local la fuente con nombre
+    Cabin, Cabin Regular o Cabin-Regular */
+    src: local('Myriad Web Pro'),
+         local('../typography/Myriad Web Pro.ttf'),
+         local('Myriad Web Pro'),
+         url('../typography/Myriad Web Pro.ttf') format('ttf');
+  }
+
+a, h1, h2, h3, h4 {
+    font-family: 'Charm', cursive;
+    color: #B25E00;
+}
+
