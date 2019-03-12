@@ -109,20 +109,20 @@ section {
 }
 
 .container-activity {
-  &:hover {
-    -webkit-box-shadow: 2px 2px 16px 0px #B27000;
-    -moz-box-shadow: 2px 2px 16px 0px #B27000;
-    box-shadow: 2px 2px 16px 0px #B27000;
-  }
-  border-radius: 20px;
-  display: inline-block;
-  background: linear-gradient(to bottom, #FFD08D 0%,#FFBE59 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  background: -moz-linear-gradient(top, #FFD08D 0%, #FFBE59  100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, #FFD08D 0%,#FFBE59 100%); /* Chrome10-25,Safari5.1-6 */  
-  margin: 10px;
-  padding: 10px  20px;
-  transition: 1.5s;
-  width: 200px;
+    &:hover {
+        -webkit-box-shadow: 2px 2px 16px 0px #B27000;
+        -moz-box-shadow: 2px 2px 16px 0px #B27000;
+        box-shadow: 2px 2px 16px 0px #B27000;
+    }
+    border-radius: 20px;
+    display: inline-block;
+    background: linear-gradient(to bottom, #FFD08D 0%,#FFBE59 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    background: -moz-linear-gradient(top, #FFD08D 0%, #FFBE59  100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #FFD08D 0%,#FFBE59 100%); /* Chrome10-25,Safari5.1-6 */  
+    margin: 10px;
+    padding: 10px  20px;
+    transition: 1.5s;
+    width: 200px;
 }
 
 .container-tittle {
