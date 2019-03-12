@@ -1,6 +1,9 @@
+node_modules
+
 #   cache de sass    #
 ######################
 .sass-cache
+css
 
 # OS generated files #
 ######################

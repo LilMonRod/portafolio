@@ -1,154 +1,139 @@
-/****************
-      Helpers
-*****************/
-.clearfix::after {
-  display: block;
-  content: "";
-  clear: both; }
-
-@font-face {
-  font-family: 'Cabin';
-  /* Antes de descargar el archivo, le decimos al buscador
-  que intente buscar en local la fuente con nombre
-  Cabin, Cabin Regular o Cabin-Regular */
-  src: local("Myriad Web Pro"), local("../typography/Myriad Web Pro.ttf"), local("Myriad Web Pro"), url("../typography/Myriad Web Pro.ttf") format("ttf"); }
-a, h1, h2, h3, h4 {
-  font-family: 'Charm', cursive;
-  color: #B25E00; }
-
-.wrapper {
-  max-width: 1100px;
-  margin: 0 auto; }
-
 body {
-  margin-top: 0;
-  margin-left: 0; }
+  margin: 0; }
+  body h1,
+  body h2,
+  body h3,
+  body h4 {
+    font-family: 'Charm', cursive; }
 
-#header {
-  background-color: #FFF4E9;
-  height: 100px;
-  width: 100%;
-  top: 0;
+h1 {
+  font-size: 2.5em; }
+
+h1,
+h2 {
+  display: inline-block;
+  margin-left: 15%;
+  width: 50%; }
+
+section {
+  padding: 7.5% 0 7.5% 7.5%; }
+
+#circle-css {
+  height: 60px;
+  width: 60px; }
+
+#circle-css > p {
+  margin: 9px 0; }
+
+#circle-html {
+  width: 100px;
+  height: 100px; }
+
+#circle-js {
+  height: 147px;
+  width: 147px; }
+
+#circle-js > p {
+  margin: 48px 0; }
+
+#circle-ps {
+  height: 147px;
+  width: 147px; }
+
+#circle-ps > p {
+  margin: 55px 0; }
+
+#circle-sass {
+  height: 60px;
+  width: 60px; }
+
+#circle-sass > p {
+  margin: 12px 0; }
+
+#circle-sketch {
+  height: 92px;
+  width: 92px; }
+
+#circle-sketch > p {
+  margin: 30px 0; }
+
+#home {
+  height: 55vw; }
+
+#menu {
+  -webkit-box-shadow: 2px 2px 16px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 2px 16px 0px rgba(0, 0, 0, 0.75);
+  background-color: #Fcf5f5;
+  box-shadow: 2px 2px 16px 0px rgba(0, 0, 0, 0.75);
+  height: 100%;
   position: fixed;
+  width: 7.5%;
   z-index: 1; }
 
-li > a {
-  text-decoration: none;
-  font-size: 1.2em; }
-
-ul > li {
-  padding: 20px 15px;
-  display: inline-block; }
-
-#menu-header {
-  margin-right: 13%;
-  margin-top: 2.45%; }
-
-ul.menu {
-  float: right; }
-
-#logo {
-  max-width: 60px;
-  margin-left: 11%;
-  margin-top: 10px; }
-
-.box {
-  margin-top: 100px; }
-
-.swing {
-  max-width: 25%;
-  margin-left: 20%;
-  top: 100px;
-  position: relative; }
-
-#tittle {
-  display: inline-block; }
-
-.box-about {
-  max-width: 270px;
-  height: 270px;
-  padding: 20px;
-  margin-left: 2%;
+.circle {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#b4e391+0,299a0b+50,b4e391+100 */
+  background: #b4e391;
+  /* Old browsers */
+  background: linear-gradient(to bottom, #b4e391 0%, #299a0b 50%, #b4e391 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  background: -moz-linear-gradient(top, #b4e391 0%, #299a0b 50%, #b4e391 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #b4e391 0%, #299a0b 50%, #b4e391 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  border-radius: 50%;
   display: inline-block;
-  background-color: #FFF4E9; }
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b4e391', endColorstr='#b4e391',GradientType=0 );
+  /* IE6-9 */
+  padding: 2%; }
 
-#about > h2 {
-  margin-top: 15%; }
+.circle > p {
+  color: #fff;
+  display: inline-block;
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center; }
 
-.graph {
-  max-width: 93%; }
+.container-activity {
+  border-radius: 20px;
+  display: inline-block;
+  background: linear-gradient(to bottom, #FFD08D 0%, #FFBE59 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  background: -moz-linear-gradient(top, #FFD08D 0%, #FFBE59 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #FFD08D 0%, #FFBE59 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  margin: 10px;
+  padding: 10px  20px;
+  transition: 1.5s;
+  width: 200px; }
+  .container-activity:hover {
+    -webkit-box-shadow: 2px 2px 16px 0px #B27000;
+    -moz-box-shadow: 2px 2px 16px 0px #B27000;
+    box-shadow: 2px 2px 16px 0px #B27000; }
 
-.cooker {
-  position: absolute;
-  max-width: 200px; }
+.container-tittle {
+  background-color: #Fcf5f5; }
 
-h3 > span {
-  color: #cdaa7d; }
+.container-tittle > h1 {
+  color: #000000;
+  margin: 1% 7.5%; }
 
-/***contact/footer***/
 .icon {
-  max-width: 60px; }
+  margin: 0 25%;
+  max-width: 50%;
+  padding: 14% 0; }
+
+.social-media {
+  max-width: 5%; }
 
 .swing {
-  -webkit-animation: swinging 15s ease-in-out 0s infinite;
-  -moz-animation: swinging 15s ease-in-out 0s infinite;
   animation: swinging 15s ease-in-out 0s infinite;
-  -webkit-transform-origin: 50% 0;
-  -moz-transform-origin: 50% 0;
-  transform-origin: 50% 0; }
+  left: 55%;
+  max-width: 25%;
+  position: absolute;
+  transform-origin: 50% 0;
+  top: 20%; }
 
-@-webkit-keyframes swinging {
-  0% {
-    -webkit-transform: rotate(0); }
-  5% {
-    -webkit-transform: rotate(10deg); }
-  10% {
-    -webkit-transform: rotate(-9deg); }
-  15% {
-    -webkit-transform: rotate(8deg); }
-  20% {
-    -webkit-transform: rotate(-7deg); }
-  25% {
-    -webkit-transform: rotate(6deg); }
-  30% {
-    -webkit-transform: rotate(-5deg); }
-  35% {
-    -webkit-transform: rotate(4deg); }
-  40% {
-    -webkit-transform: rotate(-3deg); }
-  45% {
-    -webkit-transform: rotate(2deg); }
-  50% {
-    -webkit-transform: rotate(0); }
-  /* Come to rest at 50%. The rest is just stillness */
-  100% {
-    -webkit-transform: rotate(0); } }
-@-moz-keyframes swinging {
-  0% {
-    -moz-transform: rotate(0); }
-  5% {
-    -moz-transform: rotate(10deg); }
-  10% {
-    -moz-transform: rotate(-9deg); }
-  15% {
-    -moz-transform: rotate(8deg); }
-  20% {
-    -moz-transform: rotate(-7deg); }
-  25% {
-    -moz-transform: rotate(6deg); }
-  30% {
-    -moz-transform: rotate(-5deg); }
-  35% {
-    -moz-transform: rotate(4deg); }
-  40% {
-    -moz-transform: rotate(-3deg); }
-  45% {
-    -moz-transform: rotate(2deg); }
-  50% {
-    -moz-transform: rotate(0); }
-  /* Come to rest at 50%. The rest is just stillness */
-  100% {
-    -moz-transform: rotate(0); } }
 @keyframes swinging {
   0% {
     transform: rotate(0); }
