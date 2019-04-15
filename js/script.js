@@ -18,7 +18,12 @@ function printEvents(event) {
 		}
 
 		const date = document.createElement('p');
-		date.innerText = e.created_at;
+		const formatDate = new Date(e.created_at);
+		const day = formatDate.getDate();
+		const month = formatDate.getMonth();
+		const year = formatDate.getFullYear();
+		date.innerText = day + '/' +  month + '/' + year;
+
 		container.appendChild(date);
 		containerGit.appendChild(container);
 	}
@@ -39,7 +44,12 @@ for (const e of event) {
 	container.appendChild(title);
 	container.appendChild(subtitle);
 	const date = document.createElement('p');
-	date.innerText = e.created_at;
+
+	const formatDate = new Date(e.created_at);
+	const day = formatDate.getDate();
+	const month = formatDate.getMonth();
+	const year = formatDate.getFullYear();
+	date.innerText = day + '/' +  month + '/' + year;
 	container.appendChild(date);
 	containerRepos.appendChild(container);
 }
