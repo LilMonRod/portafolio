@@ -1,0 +1,99 @@
+body {
+    h1 {
+        font-family: 'Charm', cursive;
+    }
+    h2,
+    h3,
+    h4 {
+        font-family: 'Merriweather', serif;
+  }
+  margin: 0;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+h1,
+h2 {
+    display: inline-block;
+    margin-left: 15%;
+    width: 50%;
+}
+
+section {
+    padding: 7.5% 0 7.5% $width-stripe;
+}
+
+#home {
+    height: 55vw;
+}
+
+#menu {
+    -webkit-box-shadow: 2px 2px 16px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 2px 16px 0px rgba(0,0,0,0.75);
+    background-color: #Fcf5f5;
+    box-shadow: 2px 2px 16px 0px rgba(0,0,0,0.75);
+    height: 100%;
+    position: fixed;
+    width: $width-stripe;
+    z-index: 1;
+}
+
+.container-activity {
+    &:hover {
+        -webkit-box-shadow: 2px 2px 16px 0px #B27000;
+        -moz-box-shadow: 2px 2px 16px 0px #B27000;
+        box-shadow: 2px 2px 16px 0px #B27000;
+    }
+    border-radius: 20px;
+    display: inline-block;
+    background: linear-gradient(to bottom, rgb(148, 247, 255, 0.5) 0%, rgb(160, 232, 157, 0.5) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    background: -moz-linear-gradient(top, rgb(148, 247, 255, 0.5) 0%, rgb(160, 232, 157, 0.5) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgb(148, 247, 255, 0.5) 0%, rgb(160, 232, 157, 0.5) 100%); /* Chrome10-25,Safari5.1-6 */  
+    margin: 10px;
+    overflow: hidden;
+    padding: 10px  20px;
+    transition: 0.5s;
+    width: 200px;
+}
+.container-content {
+    height: 70vw;
+}
+.content {
+    margin-left: 4%;
+    clear: both;
+}
+.content-github {
+    height: 60vw;
+    overflow: auto;
+}
+
+.content-float {
+    float: left;
+    width: 50%;
+}
+
+.container-tittle {
+    background-color: #Fcf5f5;
+}
+.container-flower {
+    position: absolute;
+    width: 100%;
+    top: -15%;
+    z-index: -1;
+}
+.container-tittle>h1 {
+    color: #000000;
+    margin: 1% $width-stripe;
+    z-index: 1;
+}
+.icon {
+    margin: 0 25%;
+    max-width: 50%;
+    padding: 14% 0;
+}
+
+.social-media {
+    max-width: 5%;
+}
