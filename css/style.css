@@ -1,3 +1,45 @@
+.wrapper {
+  margin: 30px auto;
+}
+@media (min-width: 768px) {
+  .wrapper {
+    width: 90%;
+    margin-bottom: 60px;
+    margin-top: 60px;
+    max-width: 1440px;
+  }
+}
+.typing {
+font-weight: bold;
+  animation-name: parpadeo;
+  animation-duration: 1.2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+
+  -webkit-animation-name: parpadeo;
+  -webkit-animation-duration: 1.2s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+}
+
+@-moz-keyframes parpadeo{  
+  0% { opacity: 1.0; }
+  50% { opacity: 0.0; }
+  100% { opacity: 1.0; }
+}
+
+@-webkit-keyframes parpadeo {  
+  0% { opacity: 1.0; }
+  50% { opacity: 0.0; }
+   100% { opacity: 1.0; }
+}
+
+@keyframes parpadeo {  
+  0% { opacity: 1.0; }
+   50% { opacity: 0.0; }
+  100% { opacity: 1.0; }
+}
+
 body {
   margin: 0;
 }
@@ -10,141 +52,134 @@ body h4 {
   font-family: "Merriweather", serif;
 }
 
-h1 {
-  font-size: 2.5em;
-}
-
-h1,
-h2 {
-  display: inline-block;
-  margin-left: 15%;
-  width: 50%;
-}
-
-section {
-  padding: 7.5% 0 7.5% 7.5%;
-}
-
-#home {
-  height: 55vw;
-}
-
-#menu {
-  -webkit-box-shadow: 2px 2px 16px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 2px 2px 16px 0px rgba(0, 0, 0, 0.75);
-  background-color: #Fcf5f5;
-  box-shadow: 2px 2px 16px 0px rgba(0, 0, 0, 0.75);
-  height: 100%;
-  position: fixed;
-  width: 7.5%;
-  z-index: 1;
-}
-
-.container-activity {
-  border-radius: 20px;
-  display: inline-block;
-  background: linear-gradient(to bottom, rgba(148, 247, 255, 0.5) 0%, rgba(160, 232, 157, 0.5) 100%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  background: -moz-linear-gradient(top, rgba(148, 247, 255, 0.5) 0%, rgba(160, 232, 157, 0.5) 100%);
-  /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, rgba(148, 247, 255, 0.5) 0%, rgba(160, 232, 157, 0.5) 100%);
-  /* Chrome10-25,Safari5.1-6 */
-  margin: 10px;
-  overflow: hidden;
-  padding: 10px 20px;
-  transition: 0.5s;
-  width: 200px;
-}
-.container-activity:hover {
-  -webkit-box-shadow: 2px 2px 16px 0px #B27000;
-  -moz-box-shadow: 2px 2px 16px 0px #B27000;
-  box-shadow: 2px 2px 16px 0px #B27000;
-}
-
-.container-content {
-  height: 70vw;
-}
-
-.content {
-  margin-left: 4%;
-  clear: both;
-}
-
-.content-github {
-  height: 60vw;
-  overflow: auto;
-}
-
-.content-float {
-  float: left;
-  width: 50%;
-}
-
-.container-tittle {
-  background-color: #Fcf5f5;
-}
-
-.container-flower {
-  position: absolute;
+.header__cont {
+  display: flex;
+  height: 150px;
+  justify-content: space-evenly;
   width: 100%;
-  top: -15%;
-  z-index: -1;
 }
 
-.container-tittle > h1 {
-  color: #000000;
-  margin: 1% 7.5%;
-  z-index: 1;
+.header__cont {
+  display: flex;
+  height: 80px;
+  justify-content: space-evenly;
+  padding: 10px 0;
+  width: 100%;
 }
 
-.icon {
-  margin: 0 25%;
-  max-width: 50%;
-  padding: 14% 0;
+.header__logo {
+  height: 60px;
+  padding: 5px;
+  width: 50px;
 }
 
-.social-media {
-  max-width: 5%;
+.header__icon {
+  display: block;
+  height: 50px;
+  margin: 0 auto;
+  width: 40px;
 }
 
-@keyframes swinging {
-  0% {
-    transform: rotate(0);
-  }
-  5% {
-    transform: rotate(10deg);
-  }
-  10% {
-    transform: rotate(-9deg);
-  }
-  15% {
-    transform: rotate(8deg);
-  }
-  20% {
-    transform: rotate(-7deg);
-  }
-  25% {
-    transform: rotate(6deg);
-  }
-  30% {
-    transform: rotate(-5deg);
-  }
-  35% {
-    transform: rotate(4deg);
-  }
-  40% {
-    transform: rotate(-3deg);
-  }
-  45% {
-    transform: rotate(2deg);
-  }
-  50% {
-    transform: rotate(0);
-  }
-  /* Come to rest at 50%. The rest is just stillness */
-  100% {
-    transform: rotate(0);
-  }
+.main-nav {
+  width: 75%;
+  margin-right: 5%;
 }
 
-/*# sourceMappingURL=style.css.map */
+.main-nav__cont {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: space-evenly;
+}
+
+.main-nav__item {
+  list-style: none;
+  margin: 0;
+  padding: 5px;
+}
+
+.main-nav__link:hover {
+    text-decoration: underline;
+    text-decoration-color: pink;
+  }
+.main-nav__link  {
+  text-decoration: none;
+}
+/* inicio prueba */
+.intro-header { 
+  padding-top: 80px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+  padding-bottom: 50px;
+  text-align: center;
+  background: url('https://68.media.tumblr.com/d3fd545cd977a174beef12c1106880bf/tumblr_nt505iKkul1ud7rr3o1_1280.jpg') no-repeat center center fixed;
+  background-size: cover;
+  height: 855px;
+}
+.bg-overlay {
+background:rgba(0,0,0, 0.3);
+height: 855px;
+}
+
+.about__tittle {
+  color: transparent;
+  font-size: 3rem;
+  font-weight: unset;
+  -webkit-text-stroke: 2px black;
+}
+
+.about__sub-tittle {
+  color: transparent;
+  font-size: 2rem;
+  font-weight: unset;
+  -webkit-text-stroke: 2px black;
+}
+
+.about__description {
+  display: inline-block;
+  font-size: 1.3rem;
+  max-width: 70%;
+}
+
+
+
+.info__container {
+  /*ul*/
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+.info__item {
+  /*li*/
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 45%;
+}
+
+.info__link:hover {
+  text-decoration: underline;
+  text-decoration-color: pink;
+}
+.contact__tittle {
+  /* h*/
+}
+.info__link {
+  color: black;
+  text-decoration: none;
+}
+
+.info__img {
+  width: 65px;
+  border: 1px solid lightskyblue;
+}
+
+.about__link {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+}
+.about__link:hover {
+  text-decoration: underline;
+  text-decoration-color: lightskyblue;
+ }

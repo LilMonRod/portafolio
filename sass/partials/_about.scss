@@ -1,0 +1,39 @@
+.intro-header { 
+  background: url('https://68.media.tumblr.com/d3fd545cd977a174beef12c1106880bf/tumblr_nt505iKkul1ud7rr3o1_1280.jpg') no-repeat center center fixed;
+  background-size: cover;
+  height: 855px;
+  padding-top: 80px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+.about__tittle {
+  color: transparent;
+  font-size: 3rem;
+  font-weight: unset;
+  -webkit-text-stroke: 2px black;
+}
+
+.about__sub-tittle {
+  color: transparent;
+  font-size: 2rem;
+  font-weight: unset;
+  -webkit-text-stroke: 2px black;
+}
+
+.about__description {
+  display: inline-block;
+  font-size: 1.5rem;
+  max-width: 70%;
+}
+
+.about__link {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+
+ &:hover {
+  text-decoration: underline;
+  text-decoration-color: lightskyblue;
+ } 
+}
