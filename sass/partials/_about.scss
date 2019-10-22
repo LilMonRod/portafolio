@@ -1,30 +1,48 @@
-.intro-header { 
-  background: url('https://68.media.tumblr.com/d3fd545cd977a174beef12c1106880bf/tumblr_nt505iKkul1ud7rr3o1_1280.jpg') no-repeat center center fixed;
+.about__container { 
+  background: url('../../img/img-content/develop-x.jpg') no-repeat center;
   background-size: cover;
-  height: 855px;
-  padding-top: 80px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
-  padding-bottom: 50px;
   text-align: center;
+  position: relative;
+
+  @media (min-width: $breakpoint-md) {
+    background-image: url('../../img/img-content/develop-2x.jpg');
+    height: 40vw;
+  }
 }
 
 .about__tittle {
   color: transparent;
-  font-size: 3rem;
   font-weight: unset;
+  position: absolute;
+  top: 32%;
+  font-size: 2rem;
+  left: 40%;
   -webkit-text-stroke: 2px black;
+
+  @media (min-width: $breakpoint-md) {
+    top: 40%;
+    font-size: 3rem;
+    left: 40%;
+  }
 }
 
 .about__sub-tittle {
   color: transparent;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: unset;
+  left: 40%;
+  position: absolute;
+  top: 53%;
   -webkit-text-stroke: 2px black;
+
+  @media (min-width: $breakpoint-md) {
+    font-size: 2rem;
+  }
 }
 
 .about__description {
   display: inline-block;
-  font-size: 1.5rem;
-  max-width: 70%;
+  max-width: 60%;
 }
 
 .about__link {
@@ -36,4 +54,76 @@
   text-decoration: underline;
   text-decoration-color: lightskyblue;
  } 
+}
+
+.skills__cont {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.skills__img {
+  display: block;
+  margin: 0 auto;
+  max-width: 75px;
+  width: 75px;
+
+  @media (min-width: $breakpoint-md) {
+    max-width: 150px;
+  }
+}
+
+.skills__img--css {
+  filter: grayscale(20%);
+
+  &:hover {
+    filter: grayscale(0%);
+  }
+}
+
+.skills__img--js {
+  filter: grayscale(50%);
+  
+  &:hover {
+    filter: grayscale(0%);
+  }
+}
+
+.skills__img--html {
+  filter: grayscale(20%);
+  
+  &:hover {
+    filter: grayscale(0%);
+  }
+}
+.skills__img--react {
+  filter: grayscale(75%);
+  
+  &:hover {
+    filter: grayscale(0%);
+  }
+}
+
+.skills__img--sass {
+  filter: grayscale(30%);
+  
+  &:hover {
+    filter: grayscale(0%);
+  }
+}
+
+.skills__img--soft {
+  display: block;
+  margin: 0 auto;
+  max-width: 250px;
+}
+
+.skills__item {
+  list-style: none;
+  padding: 0;
+  width: 30%;
+}
+
+.skills__item-title {
+  text-align: center;
 }

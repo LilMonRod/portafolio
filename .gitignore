@@ -3,6 +3,7 @@ node_modules
 #   cache de sass    #
 ######################
 .sass-cache
+style.css.map
 
 # OS generated files #
 ######################
