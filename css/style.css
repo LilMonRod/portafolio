@@ -85,23 +85,25 @@ body {
     text-decoration: underline;
     text-decoration-color: lightskyblue; }
 
-.about__container {
-  background: url("../../img/img-content/develop-x.jpg") no-repeat center;
-  background-size: cover;
-  text-align: center;
+.about {
   position: relative; }
+
+.about__container {
+  background: url("./../img/img-content/develop-x.jpg") no-repeat center;
+  background-size: cover;
+  height: 30vw;
+  text-align: center; }
   @media (min-width: 768px) {
     .about__container {
-      background-image: url("../../img/img-content/develop-2x.jpg");
+      background-image: url("./../img/img-content/develop-2x.jpg");
       height: 40vw; } }
 
 .about__tittle {
   color: transparent;
   font-weight: unset;
   position: absolute;
-  top: 32%;
   font-size: 2rem;
-  left: 40%;
+  left: 29%;
   -webkit-text-stroke: 2px black; }
   @media (min-width: 768px) {
     .about__tittle {
@@ -111,9 +113,9 @@ body {
 
 .about__sub-tittle {
   color: transparent;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: unset;
-  left: 40%;
+  left: 27%;
   position: absolute;
   top: 53%;
   -webkit-text-stroke: 2px black; }
