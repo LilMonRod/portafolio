@@ -101,31 +101,29 @@ body {
 .about__tittle {
   color: transparent;
   font-weight: unset;
-  position: absolute;
   font-size: 2rem;
-  left: 29%;
   -webkit-text-stroke: 2px black; }
   @media (min-width: 768px) {
     .about__tittle {
-      top: 40%;
-      font-size: 3rem;
-      left: 40%; } }
+      color: white;
+      font-size: 3rem; } }
 
 .about__sub-tittle {
   color: transparent;
   font-size: 1.2rem;
   font-weight: unset;
-  left: 27%;
-  position: absolute;
-  top: 53%;
   -webkit-text-stroke: 2px black; }
   @media (min-width: 768px) {
     .about__sub-tittle {
+      color: white;
       font-size: 2rem; } }
 
 .about__description {
   display: inline-block;
-  max-width: 60%; }
+  max-width: 80%; }
+  @media (min-width: 768px) {
+    .about__description {
+      max-width: 60%; } }
 
 .about__link {
   color: black;
@@ -177,15 +175,75 @@ body {
 .skills__img--soft {
   display: block;
   margin: 0 auto;
-  max-width: 250px; }
+  max-width: 100px; }
+  @media (min-width: 768px) {
+    .skills__img--soft {
+      max-width: 250px; } }
 
 .skills__item {
   list-style: none;
   padding: 0;
-  width: 30%; }
+  width: 30%;
+  margin-top: 15px; }
+  @media (min-width: 768px) {
+    .skills__item {
+      margin-top: 25px; } }
 
 .skills__item-title {
   text-align: center; }
+
+.design__cont {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+
+.design__item {
+  list-style: none;
+  margin-top: 15px;
+  padding: 0;
+  width: 100%; }
+  @media (min-width: 768px) {
+    .design__item {
+      margin-top: 25px;
+      width: 40%; } }
+
+.design__link {
+  color: black;
+  display: block;
+  text-decoration: none;
+  width: 100%; }
+  .design__link:hover {
+    text-decoration: underline;
+    text-decoration-color: lightskyblue; }
+
+.design__img {
+  max-width: 200px; }
+
+.develop__cont {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+
+.develop__item {
+  list-style: none;
+  margin-top: 15px;
+  padding: 0;
+  width: 100%; }
+  @media (min-width: 768px) {
+    .develop__item {
+      margin-top: 25px; } }
+
+.develop__link {
+  color: black;
+  display: block;
+  text-decoration: none;
+  width: 100%; }
+  .develop__link:hover {
+    text-decoration: underline;
+    text-decoration-color: lightskyblue; }
+
+.develop__img {
+  max-width: 200px; }
 
 .contact {
   /*div*/ }

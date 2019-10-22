@@ -16,15 +16,12 @@
 .about__tittle {
   color: transparent;
   font-weight: unset;
-  position: absolute;
   font-size: 2rem;
-  left: 29%;
   -webkit-text-stroke: 2px black;
 
   @media (min-width: $breakpoint-md) {
-    top: 40%;
+    color: white;
     font-size: 3rem;
-    left: 40%;
   }
 }
 
@@ -32,19 +29,21 @@
   color: transparent;
   font-size: 1.2rem;
   font-weight: unset;
-  left: 27%;
-  position: absolute;
-  top: 53%;
   -webkit-text-stroke: 2px black;
 
   @media (min-width: $breakpoint-md) {
+    color: white;
     font-size: 2rem;
   }
 }
 
 .about__description {
   display: inline-block;
-  max-width: 60%;
+  max-width: 80%;
+
+  @media (min-width: $breakpoint-md) {
+    max-width: 60%;
+  }
 }
 
 .about__link {
@@ -117,13 +116,22 @@
 .skills__img--soft {
   display: block;
   margin: 0 auto;
-  max-width: 250px;
+  max-width: 100px;
+
+  @media (min-width: $breakpoint-md) {
+    max-width: 250px;
+  }
 }
 
 .skills__item {
   list-style: none;
   padding: 0;
   width: 30%;
+  margin-top: 15px;
+
+  @media (min-width: $breakpoint-md) {
+    margin-top: 25px;
+  }
 }
 
 .skills__item-title {
