@@ -1,6 +1,7 @@
 .about {
   position: relative;
 }
+
 .about__container { 
   background: url('./../img/img-content/develop-x.jpg') no-repeat center;
   background-size: cover;
@@ -16,24 +17,23 @@
 .about__tittle {
   color: transparent;
   font-weight: unset;
-  font-size: 2rem;
+  font-size: 1.75rem;
   -webkit-text-stroke: 2px black;
 
   @media (min-width: $breakpoint-md) {
     color: white;
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 }
 
 .about__sub-tittle {
-  color: transparent;
+  color: white;
   font-size: 1.2rem;
   font-weight: unset;
   -webkit-text-stroke: 2px black;
 
   @media (min-width: $breakpoint-md) {
-    color: white;
-    font-size: 2rem;
+    font-size: 1.75rem;
   }
 }
 
@@ -56,10 +56,11 @@
   text-decoration-color: lightskyblue;
  } 
 }
-
 .skills__cont {
   display: flex;
   flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
   justify-content: space-between;
 }
 
@@ -116,10 +117,10 @@
 .skills__img--soft {
   display: block;
   margin: 0 auto;
-  max-width: 100px;
+  max-width: 60px;
 
   @media (min-width: $breakpoint-md) {
-    max-width: 250px;
+    max-width: 70px;
   }
 }
 
@@ -127,13 +128,30 @@
   list-style: none;
   padding: 0;
   width: 30%;
-  margin-top: 15px;
+  margin-bottom: 15px;
 
   @media (min-width: $breakpoint-md) {
-    margin-top: 25px;
+    margin-bottom: 25px;
   }
 }
 
+.skill__title {
+  width: 100%;
+}
 .skills__item-title {
   text-align: center;
+}
+
+.soft-skills {
+  margin-top: 25px;
+  padding: 20px;
+  background: url('./../img/img-content/skills/cotton.jpg') no-repeat center;
+  background-size: cover;
+
+  @media (min-width: $breakpoint-md) {
+    margin-top: 35px;
+  }
+  @media (min-width: $breakpoint-lg) {
+    margin-top: 45px;
+  }
 }

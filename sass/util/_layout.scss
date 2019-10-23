@@ -15,11 +15,23 @@ body {
   h1 {
     font-family: 'Charm', cursive;
   }
+
   h2,
-  h3,
-  h4 {
+  h3 {
     font-family: 'Merriweather', serif;
   }
+
+  p,
+  h4 {
+    font-family: 'Roboto', sans-serif;
+  }
+}
+
+h2 {
+  color: #065A82;
+}
+h3 {
+  color: #c48a8e;
 }
 
 .typing {

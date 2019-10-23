@@ -1,0 +1,30 @@
+.activity__cont {
+  border: 1px solid gray;
+  border-radius: 20px;
+  height: auto;
+  margin: 5px;
+  overflow: hidden;
+  padding: 5px;
+  width: 32%;
+
+  & h3 {
+    width: 100%;
+  }
+  @media (min-width: $breakpoint-md) {
+    width: 20%;
+  }
+}
+
+.github__data {
+  display: flex;
+  flex-wrap: wrap;
+  height: 200px;
+  overflow: scroll;
+
+  @media (min-width: $breakpoint-md) {
+    height: 350px;
+  }
+  @media (min-width: $breakpoint-lg) {
+    height: 450px;
+  }
+}

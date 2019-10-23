@@ -29,13 +29,15 @@
   } 
 }
 .design__img {
-  max-width: 200px;
+  width: 100px;
+  
+  @media (min-width: $breakpoint-md) {
+    max-width: 200px;
+  }
 }
 .design__item-title {
 
 }
-
-//////////@at-root
 
 .develop {
 
@@ -53,6 +55,7 @@
 
   @media (min-width: $breakpoint-md) {
     margin-top: 25px;
+    width: 40%;
   }
 }
 .develop__link {
@@ -67,7 +70,11 @@
   } 
 }
 .develop__img {
-  max-width: 200px;
+  width: 100px;
+
+  @media (min-width: $breakpoint-md) {
+    max-width: 200px;
+  }
 }
 .develop__item-title {
 
