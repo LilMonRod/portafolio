@@ -1,11 +1,13 @@
 .wrapper {
   margin: 30px auto;
+  max-width: 1400px;
+  width: 95%;
 
   @media (min-width: $breakpoint-md) {
-    width: 90%;
     margin-bottom: 60px;
     margin-top: 60px;
     max-width: 1440px;
+    width: 90%;
   }
 }
   
@@ -13,7 +15,8 @@ body {
   margin: 0;
   
   h1 {
-    font-family: 'Charm', cursive;
+    // font-family: 'Charm', cursive;
+    font-family: sans-serif;
   }
 
   h2,
