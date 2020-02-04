@@ -3,17 +3,18 @@
 }
 
 .about__container { 
+  align-items: center;
   background: url('./../img/img-content/develop-x.jpg') no-repeat center;
   background-size: cover;
   display: flex;
-  height: 30vw;
+  height: 40vh;
   justify-content: center;
   flex-direction: column;
-  align-items: center;
+  min-height: 150px;
 
   @media (min-width: $breakpoint-md) {
     background-image: url('./../img/img-content/develop-x.jpg');
-    height: 40vw;
+    height: 45vh;
   }
 }
 
