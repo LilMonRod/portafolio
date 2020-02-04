@@ -151,7 +151,7 @@ h3 {
   color: transparent;
   background: url(../../img/title/glitter.jpg) repeat;
   background-position: center center;
-  -webkit-background-clip: text;
+  background-clip: text;
   margin: 10px 0;
   position: relative;
   text-align: left;
