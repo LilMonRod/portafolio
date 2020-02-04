@@ -148,13 +148,25 @@ h3 {
 .about__tittle {
   font-weight: 800;
   font-size: 2rem;
-  color: transparent;
-  background: url(../../img/title/glitter.jpg) repeat;
-  background-position: center center;
-  background-clip: text;
   margin: 10px 0;
   position: relative;
   text-align: left;
+  display: inline-block;
+  color: #000;
+  background: #fff;
+  mix-blend-mode: multiply;
+  position: relative;
+}
+.about__tittle::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, red, yellow);
+  mix-blend-mode: screen;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 @media (min-width: 768px) {
   .about__tittle {
