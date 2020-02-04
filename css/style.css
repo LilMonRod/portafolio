@@ -142,7 +142,7 @@ h3 {
 @media (min-width: 768px) {
   .about__container {
     background-image: url("./../img/img-content/develop-x.jpg");
-    height: 45vh;
+    height: 50vh;
   }
 }
 
